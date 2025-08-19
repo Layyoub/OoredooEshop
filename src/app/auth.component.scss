@@ -1,0 +1,99 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e60000 0%, #fff 100%);
+  position: relative;
+  overflow: hidden;
+}
+.ooredoo-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #e60000 60%, #fff0 100%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0.18;
+}
+.auth-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(230,0,0,0.18), 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2.7rem 2.2rem 2.2rem 2.2rem;
+  width: 370px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.7s cubic-bezier(.39,.575,.56,1.000);
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.logo {
+  width: 130px;
+  margin-bottom: 1.7rem;
+  filter: drop-shadow(0 2px 8px #e6000033);
+}
+h2 {
+  color: #e60000;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.input-group {
+  margin-bottom: 1.2rem;
+}
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1.5px solid #eee;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  background: #fafafa;
+}
+input:focus {
+  border-color: #e60000;
+  box-shadow: 0 0 0 2px #e6000033;
+}
+.btn-main {
+  width: 100%;
+  background: linear-gradient(90deg, #e60000 60%, #ff4747 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px #e6000033;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-main:hover {
+  background: linear-gradient(90deg, #b80000 60%, #e60000 100%);
+  box-shadow: 0 4px 16px #e6000044;
+}
+.toggle-link {
+  margin-top: 1.2rem;
+  font-size: 0.98rem;
+}
+.toggle-link a {
+  color: #e60000;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 0.3rem;
+  font-weight: 600;
+}
+.error {
+  color: #e60000;
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}

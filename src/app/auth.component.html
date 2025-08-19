@@ -1,0 +1,22 @@
+<div class="auth-container">
+  <div class="ooredoo-bg"></div>
+  <div class="auth-card">
+    <img src="assets/ooredoo-logo.png" alt="Ooredoo Logo" class="logo" />
+    <h2>{{ isLogin ? 'Login' : 'Register' }}</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <input [(ngModel)]="username" name="username" type="text" placeholder="Username" required />
+      </div>
+      <div class="input-group">
+        <input [(ngModel)]="password" name="password" type="password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="btn-main">{{ isLogin ? 'Login' : 'Register' }}</button>
+    </form>
+    <p class="toggle-link">
+      <span *ngIf="isLogin">Don't have an account?</span>
+      <span *ngIf="!isLogin">Already have an account?</span>
+      <a href="#" (click)="$event.preventDefault(); toggleMode()">{{ isLogin ? 'Register' : 'Login' }}</a>
+    </p>
+    <div *ngIf="error" class="error">{{ error }}</div>
+  </div>
+</div>
