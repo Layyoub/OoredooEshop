@@ -1,0 +1,35 @@
+package com.example.backend.dto;
+
+import java.time.LocalDate;
+
+public class ReductionDTO {
+    private Integer codeReduction;
+    private String cleReduction;
+    private Integer montantReduction;
+    private Integer montantMinCommande;
+    private Integer etat;
+    private LocalDate creationDate;
+    private Integer joursValidity;
+    private LocalDate dateDebut;
+    private LocalDate dateFi;
+
+    // Getters and setters
+    public Integer getCodeReduction() { return codeReduction; }
+    public void setCodeReduction(Integer codeReduction) { this.codeReduction = codeReduction; }
+    public String getCleReduction() { return cleReduction; }
+    public void setCleReduction(String cleReduction) { this.cleReduction = cleReduction; }
+    public Integer getMontantReduction() { return montantReduction; }
+    public void setMontantReduction(Integer montantReduction) { this.montantReduction = montantReduction; }
+    public Integer getMontantMinCommande() { return montantMinCommande; }
+    public void setMontantMinCommande(Integer montantMinCommande) { this.montantMinCommande = montantMinCommande; }
+    public Integer getEtat() { return etat; }
+    public void setEtat(Integer etat) { this.etat = etat; }
+    public LocalDate getCreationDate() { return creationDate; }
+    public void setCreationDate(LocalDate creationDate) { this.creationDate = creationDate; }
+    public Integer getJoursValidity() { return joursValidity; }
+    public void setJoursValidity(Integer joursValidity) { this.joursValidity = joursValidity; }
+    public LocalDate getDateDebut() { return dateDebut; }
+    public void setDateDebut(LocalDate dateDebut) { this.dateDebut = dateDebut; }
+    public LocalDate getDateFi() { return dateFi; }
+    public void setDateFi(LocalDate dateFi) { this.dateFi = dateFi; }
+}
